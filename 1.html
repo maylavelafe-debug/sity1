@@ -1,12 +1,177 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Новая жизнь — поиск пропавших животных</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    
+  <!-- Header -->
+  <header class="header">
+   
+      <div class="logo"> <img src="logo.svg" alt=""><span>Новая жизнь</span></div>
+      <nav class="nav">
+        <a href="#" class="nav-link">Главная</a>
+        <a href="#" class="nav-link">Поиск</a>
+        <a href="#" class="nav-link">Добавить</a>
+        <a href="#" class="nav-link">Регистрация</a>
+        <a href="#" class="nav-link">Личный кабинет</a>
+        <a href="#" class="nav-link">Отзывы</a>
+        <a href="#" class="nav-link admin">Админ</a>
+      </nav>
+
+  </header>
+
+  <!-- Hero / Search -->
+  <section class="hero">
+    <div class="container">
+      <div class="search-box">
+        <input type="text" placeholder="Например: кот, район Солотча..." class="search-input" />
+        <button class="search-btn">Найти</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="stats">
+    <div class="container">
+      <div class="stat-card">
+        <span class="stat-icon">🐾</span>
+        <p>Помогли найти более 500 животных</p>
+      </div>
+      <div class="stat-card">
+        <span class="stat-icon">⏳</span>
+        <p>Более 3 лет на связи</p>
+      </div>
+      <div class="stat-card">
+        <span class="stat-icon">💖</span>
+        <p>Все услуги — бесплатно</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Animals Grid -->
+  <section class="animals">
+    <div class="container">
+      <div class="animals-grid">
+        <!-- Карточка 1 -->
+        <div class="animal-card">
+          <div class="animal-image" style="background-image: url('../images/v4_122.png')"></div>
+          <div class="animal-info">
+            <p class="district">Район: Октябрьский</p>
+            <p class="phone">Тел: +7 920 111 22 33</p>
+            <p class="date">13.10.2025</p>
+          </div>
+        </div>
+
+        <!-- Карточка 2 -->
+        <div class="animal-card">
+          <div class="animal-image" style="background-image: url('../images/v4_121.png')"></div>
+          <div class="animal-info">
+            <p class="district">Район: Октябрьский</p>
+            <p class="phone">Тел: +7 920 111 22 33</p>
+            <p class="date">13.10.2025</p>
+          </div>
+        </div>
+
+        <!-- Карточка 3 -->
+        <div class="animal-card">
+          <div class="animal-image" style="background-image: url('../images/v4_127.png')"></div>
+          <div class="animal-info">
+            <p class="district">Район: Октябрьский</p>
+            <p class="phone">Тел: +7 920 111 22 33</p>
+            <p class="date">13.10.2025</p>
+          </div>
+        </div>
+
+        <!-- Карточка 4 -->
+        <div class="animal-card">
+          <div class="animal-image" style="background-image: url('../images/v4_137.png')"></div>
+          <div class="animal-info">
+            <p class="district">Район: Октябрьский</p>
+            <p class="phone">Тел: +7 920 111 22 33</p>
+            <p class="date">13.10.2025</p>
+          </div>
+        </div>
+
+        <!-- Карточка 5 -->
+        <div class="animal-card">
+          <div class="animal-image" style="background-image: url('../images/v4_132.png')"></div>
+          <div class="animal-info">
+            <p class="district">Район: Октябрьский</p>
+            <p class="phone">Тел: +7 920 111 22 33</p>
+            <p class="date">13.10.2025</p>
+          </div>
+        </div>
+
+        <!-- Карточка 6 -->
+        <div class="animal-card">
+          <div class="animal-image" style="background-image: url('../images/v4_142.png')"></div>
+          <div class="animal-info">
+            <p class="district">Район: Октябрьский</p>
+            <p class="phone">Тел: +7 920 111 22 33</p>
+            <p class="date">13.10.2025</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonial -->
+  <section class="testimonial">
+    <div class="container">
+      <div class="testimonial-card">
+        <div class="avatar"></div>
+        <div class="testimonial-content">
+          <h3>Ольга</h3>
+          <p>Помогло всё вместе! Мои объявления и неравнодушные люди. Благодарю! ❤️</p>
+          <span class="testimonial-date">13.10.2025</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="newsletter">
+    <div class="container">
+      <h2>Подписка на новости</h2>
+      <div class="newsletter-form">
+        <input type="email" placeholder="Ваш email" />
+        <label class="checkbox">
+          <input type="checkbox" required />
+          <span>Согласие на обработку данных</span>
+        </label>
+        <button type="submit">Подписаться</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Навигация</h4>
+          <a href="#">Главная</a>
+          <a href="#">Регистрация</a>
+          <a href="#">Авторизация</a>
+          <a href="#">Личный кабинет</a>
+          <a href="#">Найдено животное</a>
+          <a href="#">Поиск</a>
+          <a href="#">Контакты</a>
+        </div>
+        <div class="footer-section">
+          <h4>Контакты</h4>
+          <p>Телефон: 8 (800) 123-45-67</p>
+          <p>Почта: mail@newlife.ru</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2025 Новая жизнь. Все права защищены.
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
